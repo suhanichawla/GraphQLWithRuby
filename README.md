@@ -1,24 +1,15 @@
-# README
+# SETUP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+cd GraphQLWithRuby
+bundle install
+rails db:migrate
+rails s
+```
+Go to localhost:3000 to see the website in action
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To generate fake data for querying use the following command
+```
+rails db:seed
+```
+This application uses faker to generate fake data for querying
